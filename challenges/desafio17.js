@@ -1,8 +1,11 @@
 db.resumoProdutos.insertOne({
-    franquia: "McDonalds",
-    totalProdutos: db.produtos.find().count(),
-  });
+  franquia: "McDonalds",
+  totalProdutos: db.produtos.find().count(),
+});
 
-  db.resumoProdutos.find({}, {
+db.resumoProdutos.find(
+  {},
+  {
     _id: 0,
-  });
+  },
+);
